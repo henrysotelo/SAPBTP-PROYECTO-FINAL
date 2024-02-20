@@ -8,7 +8,7 @@
     dataClass: #MIXED
 }
 define view entity Z_I_ORN_ITEMS_9389
-  as select from zorn_items_9389
+  as select from zorn_items_9389 as Items
   association to parent Z_I_ORN_HEADER_9389 as _Header on $projection.HeaderId = _Header.HeaderId
 {
   key header_id         as HeaderId,

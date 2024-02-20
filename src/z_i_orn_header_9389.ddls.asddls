@@ -8,7 +8,7 @@
     dataClass: #MIXED
 }
 define root view entity Z_I_ORN_HEADER_9389
-  as select from zorn_header_9389
+  as select from zorn_header_9389 as Header
   composition [0..*] of Z_I_ORN_ITEMS_9389 as _Items
 {
   key header_id       as HeaderId,

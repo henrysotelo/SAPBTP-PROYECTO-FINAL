@@ -1,4 +1,5 @@
 @Metadata.layer: #CORE
+@Search.searchable: true
 @UI: {
     headerInfo: {
         typeName: 'Sales Ordene',
@@ -31,6 +32,7 @@ annotate view Z_C_ORN_HEADER_9389 with
         criticalityRepresentation: #WITHOUT_ICON }],
         identification: [ { position: 10, label: 'Sales Order Id' } ]
         }
+  @Search.defaultSearchElement: true
   HeaderId;
 
   @EndUserText.label: 'Email'

@@ -1,0 +1,5 @@
+@EndUserText.label: 'Sevice Definition'
+define service ZSD_ORN_HEADER_9389 {
+  expose Z_C_ORN_HEADER_9389 as Header;
+  expose Z_C_ORN_ITEMS_9389  as Items;
+}

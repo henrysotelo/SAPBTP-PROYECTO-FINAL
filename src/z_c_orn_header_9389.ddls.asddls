@@ -19,8 +19,10 @@ define root view entity Z_C_ORN_HEADER_9389
       DeliveryDate,
       OrderStatus,
       ImageUrl,
+      @Semantics.user.createdBy: true
       CreatedBy,
       CreatedAt,
+      @Semantics.user.lastChangedBy: true
       LastChangedBy,
       LastChangedAt,
       /* Associations */

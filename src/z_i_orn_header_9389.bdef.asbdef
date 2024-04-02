@@ -1,0 +1,29 @@
+managed;
+define behavior for Z_I_ORN_HEADER_9389 alias header
+implementation in class zbp_i_orn_header_9389 unique
+//strict ( 2 );
+persistent table zorn_header_9389
+with additional save
+lock master
+authorization master ( instance )
+etag master LastChangedAt
+{
+  //field ( readonly : update ) HeaderId;
+  create;
+  update;
+  delete;
+  association _Items { create; }
+}
+
+define behavior for Z_I_ORN_ITEMS_9389 alias items
+implementation in class zbp_i_orn_items_9389 unique
+persistent table zorn_items_9389
+lock dependent by _Header
+authorization dependent by _Header
+etag master LastChangedAt
+{
+  update;
+  delete;
+  field ( readonly ) HeaderId;
+  association _Header;
+}

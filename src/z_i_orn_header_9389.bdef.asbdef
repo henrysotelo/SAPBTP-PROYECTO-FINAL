@@ -10,6 +10,7 @@ etag master LastChangedAt
 {
   //Administrative fields: read only
   field ( readonly ) LastChangedAt, LastChangedBy, CreatedBy;
+  field ( mandatory:create ) HeaderId, Email;
   create;
   update;
   delete;
@@ -41,8 +42,29 @@ lock dependent by _Header
 authorization dependent by _Header
 etag master LastChangedAt
 {
+
+  field ( readonly ) LastChangedAt;
+  field ( readonly ) HeaderId;
+  field ( mandatory:create ) ItemId;
   update;
   delete;
-  field ( readonly ) HeaderId;
   association _Header;
+
+  mapping for zorn_items_9389
+    {
+      HeaderId         = header_id;
+      ItemId           = item_id;
+      Name             = name;
+      Description      = description;
+      Releasedate      = releasedate;
+      DiscontinuedDate = discontinued_date;
+      Price            = price;
+      Height           = height;
+      Width            = width;
+      Depth            = depth;
+      Quantity         = quantity;
+      Unitofmeasure    = unitofmeasure;
+      LastChangedAt    = last_changed_at;
+    }
+
 }

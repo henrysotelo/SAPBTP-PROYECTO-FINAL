@@ -25,6 +25,7 @@ define view entity Z_I_ORN_ITEMS_9389
       depth             as Depth,
       quantity          as Quantity,
       unitofmeasure     as Unitofmeasure,
+      @Semantics.systemDateTime.lastChangedAt: true
       last_changed_at   as LastChangedAt,
       _Header
 }

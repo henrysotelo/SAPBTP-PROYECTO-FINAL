@@ -16,7 +16,7 @@ annotate view Z_C_ORN_ITEMS_9389 with
          identification: [ { position: 05 } ] }
   ItemId;
 
-  @EndUserText.label: 'Name'
+  @EndUserText.label: 'Nombre'
   @UI: { lineItem:       [ { position: 10, importance: #HIGH } ],
          identification: [ { position: 10 } ] }
   Name;

@@ -41,34 +41,34 @@ annotate view Z_C_ORN_HEADER_9389 with
          selectionField: [ { position: 20 } ] }
   Email;
   
-  @EndUserText.label: 'Name'
+  @EndUserText.label: 'Nombre'
   @UI: { lineItem:       [ { position: 30, importance: #HIGH, cssDefault: { width: '11rem' } } ] ,
          identification: [ { position: 30 } ],
          selectionField: [ { position: 30 } ] }
   FirstName;
 
-  @EndUserText.label: 'Surname'
+  @EndUserText.label: 'Apellidos'
   @UI: { lineItem:       [ { position: 40, importance: #HIGH, cssDefault: { width: '11rem' } } ] ,
          identification: [ { position: 40 } ],
          selectionField: [ { position: 40 } ] }
   LastName;
 
-  @EndUserText.label: 'Country'
+  @EndUserText.label: 'Cuidad'
   @UI: { lineItem:       [ { position: 50, importance: #MEDIUM, cssDefault: { width: '5rem' } } ] ,
          identification: [ { position: 50 } ] }
   Country;
 
-  @EndUserText.label: 'Created on'
+  @EndUserText.label: 'Creado el'
   @UI: { lineItem:       [ { position: 60, importance: #MEDIUM } ] ,
          identification: [ { position: 60 } ] }
   CreateOn;
 
-  @EndUserText.label: 'Delivery date'
+  @EndUserText.label: 'Fecha de entrega'
   @UI: { lineItem:       [ { position: 70, importance: #MEDIUM } ] ,
          identification: [ { position: 70 } ] }
   DeliveryDate;
 
-  @EndUserText.label: 'Image URL'
+  @EndUserText.label: 'Imagen URL'
   @UI: { lineItem:       [ { position: 80, importance: #LOW } ],
          identification: [ { position: 80 } ] }
   ImageUrl;
